@@ -1,0 +1,5 @@
+grpcio==1.32.0
+grpcio-tools==1.32.0
+sqlalchemy==1.4.22
+pytest==7.1.2
+psycopg2-binary==2.9.1

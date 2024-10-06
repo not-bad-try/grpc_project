@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package grpcdata;
+
+message Data {
+  double Decimal1 = 1;
+  double Decimal2 = 2;
+  double Decimal3 = 3;
+  double Decimal4 = 4;
+  int64 RecordTimestamp = 5; // Unix timestamp
+}
+
+message DataPacket {
+  int64 PacketTimestamp = 1; // Unix timestamp
+  int32 PacketSeqNum = 2;
+  int32 NRecords = 3;
+  repeated Data PacketData = 4;
+}
+
+service DataService {
+  rpc SendDataPacket(DataPacket) returns (Status);
+}
+
+message Status {
+  bool success = 1;
+  string message = 2;
+}

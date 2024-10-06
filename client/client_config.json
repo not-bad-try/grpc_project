@@ -1,7 +1,8 @@
 {
-    "TotalPackets": 5,
-    "RecordsInPacket": 10,
-    "TimeInterval": 2,
     "gRPCServerAddr": "localhost",
-    "gRPCServerPort": 50051
-}
+    "gRPCServerPort": 50051,
+    "TotalPackets": 10,
+    "RecordsInPacket": 5,
+    "TimeInterval": 2
+  }
+  
